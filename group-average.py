@@ -23,4 +23,4 @@ for i in range(1, m+1):
     # mean(axis=1)で平均値を出す。axis=1によって列ではなく行の平均であることを指定。
     # concatでavgに新たな条件の平均値を結合。axis=1によって縦ではなく横に結合することを指定。
     
-avg.to_csv(out, sep="\t") #タブ区切りテキストとして保存。
+avg.to_csv(out, sep="\t") # タブ区切りテキストとして保存。
