@@ -8,10 +8,10 @@ import scipy as sp
 import pandas as pd
 import sys
 
-file = sys.argv[1] #上記の"ファイル名"。
+file = sys.argv[1] # 上記の"ファイル名"。
 
-df = pd.read_table(file, index_col = 0) #データフレームを作成。
-zs = df.apply(sp.stats.zscore, axis=1) #行ごとに処理するため、apply関数を使用。z-scoreはscipyの関数を使用して計算。
-zs.to_csv('zscore.tsv',sep = "\t") #タブ区切りテキストとして保存。
+df = pd.read_table(file, index_col = 0) # データフレームを作成。
+zs = df.apply(sp.stats.zscore, axis=1) # 行ごとに処理するため、apply関数を使用。z-scoreはscipyの関数を使用して計算。
+zs.to_csv('zscore.tsv',sep = "\t") # タブ区切りテキストとして保存。
 
-#z-scoreの定義上、全ての値が同じ場合(どの条件でも発現量が0のときなど)は計算されない。
+# z-scoreの定義上、全ての値が同じ場合(どの条件でも発現量が0のときなど)は計算されない。
