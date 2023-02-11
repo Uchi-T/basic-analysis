@@ -8,6 +8,6 @@ group-average.py: Read a tabular file and calculate the average value for each g
 <br>
 select-list.py: Compare a list and a tabular file and extract common items.
 <br>
-z-score.py: Read a tabular file and calculate the row Z-scores.
+z-score.py: Read a tabular file and calculate the row Z-score of each column.
 <br>
 memo: Basic commands, functions, etc.
