@@ -19,7 +19,7 @@ plot_gene <- function(gene_id) {
 
 # geneIDがgene_idに一致する行のデータを抽出し、変数data_geneに代入する。
 data_gene <- data[data$gene == gene_id, ]
-# データの形式を変える。
+# データの形式を変える(ワイド型からロング型へ)。
 data_long <- data_gene %>% gather(ind_tissue, expression, -geneID)
 # 個体の情報と組織の情報を分割する。
 data_long <- data_long %>% separate(ind_tissue, into=c("individual", "tissue"), sep="_")
